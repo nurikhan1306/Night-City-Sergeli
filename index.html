@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -14,26 +14,32 @@
       background: linear-gradient(135deg, #ff0080, #7928ca);
       color: #fff;
       font-family: 'Trebuchet MS', sans-serif;
-      font-size: 22px;
+      font-size: 26px;
       padding: 20px;
     }
     .container {
-      max-width: 650px;
+      width: 100%;
+      max-width: 1000px;
       background: rgba(0, 0, 0, 0.6);
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
       animation: fadeIn 1s ease-in-out;
     }
     .logo {
-      max-width: 220px;
-      margin: 25px 0;
-      border-radius: 12px;
-      box-shadow: 0 0 12px rgba(255,255,255,0.5);
+      max-width: 320px;
+      width: 80%;
+      margin: 30px 0;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.7);
+    }
+    .text {
+      font-size: 28px;
+      line-height: 1.6;
     }
     .timer {
-      font-size: 26px;
-      margin-top: 20px;
+      font-size: 32px;
+      margin-top: 25px;
       font-weight: bold;
       color: #ffcc00;
     }
@@ -58,20 +64,18 @@
 </head>
 <body>
   <div class="container">
-    <!-- Верхняя надпись на русском -->
-    <p>🎉 Отсканировал — молодец! 🎉<br>
+    <p class="text">🎉 Отсканировал — молодец! 🎉<br>
     Тебе скидка на первый час в караоке и PS <b>50%</b>.<br>
     Сделай скриншот и приходи сюда 👇</p>
-
-    <!-- Логотип посередине -->
+    
     <img src="logo.png" alt="Логотип Караоке" class="logo">
 
-    <!-- Нижняя надпись на узбекском -->
-    <p>🎉 Skanerdan foydalandingiz — Barakalla! 🎉<br>
-    Sizga karaoke va PS birinchi soat uchun <b>50%</b> chegirma.<br>
+    <p class="text">🎉 Skanerdan foydalandingiz — Barakalla! 🎉<br>
+    Sizga karaoke va PS birinchi soat uchun <b>50% chegirma</b>.<br>
     Skrinshot qiling va bu yerga keling 👇</p>
 
-    <p class="timer">Переход / O‘tish orqali: <span id="timer">15</span> sek.</p>
+    <p class="timer">Переход / O‘tish orqali: <span id="timer">15</span> сек.</p>
   </div>
 </body>
 </html>
+
